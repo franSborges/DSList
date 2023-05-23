@@ -2,6 +2,12 @@ package com.frandev.dslist.entities;
 
 import java.util.Objects;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table(name = "tb_game_list")
 public class GameList {
 
   private Long id;
