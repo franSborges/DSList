@@ -13,8 +13,6 @@ import com.frandev.dslist.entities.Game;
 import com.frandev.dslist.projections.GameMinProjection;
 import com.frandev.dslist.repositories.GameRepository;
 
-
-
 @Service
 public class GameService {
 
@@ -25,7 +23,6 @@ public class GameService {
   public GameDTO findById(Long id) {
     Game result = gameRepository.findById(id).get();
     return new GameDTO(result);
-
   }
   
   @Transactional(readOnly = true)
